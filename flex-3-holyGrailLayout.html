@@ -1,0 +1,80 @@
+<!-- <!DOCTYPE html> body를 flex 설정하니 설정값이 안먹음 -->
+<html>
+<head>
+   <meta charset="utf-8">
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            width : 800px;
+            border:1px solid gray;
+        }
+        header{
+            border-bottom:1px solid gray;
+            padding-left : 20px;
+        }
+        footer{
+            border-top:1px solid gray;
+            padding-left : 20px;
+            text-align: center;
+        }
+        .content{
+            display:flex;
+        }
+        .content nav{
+            border-right:1px solid gray;
+           
+        }
+        .content aside{
+            border-left:1px solid gray;
+          
+        }
+        nav,aside{
+            flex-basis: 150px;
+            flex-shrink: 0;
+        }
+        main{
+            padding : 10px;
+        }
+        nav{
+            order : 0;
+        }
+        main{
+            order : 1;
+        }
+        aside{
+            order : 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Study</h1>
+        </header>
+        <section class = "content">
+            <nav>
+                <ul>
+                    <li>html</li>
+                    <li>css</li>
+                    <li>javascript</li>
+                </ul>
+            </nav>
+            <main>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt illum quia omnis alias, veritatis laboriosam, harum dignissimos et sed aliquam, similique dolorum autem repellendus quis quos. Odio a, mollitia, vel reprehenderit, fuga optio pariatur blanditiis est laboriosam consectetur voluptatum modi nulla maxime sunt! Blanditiis nulla quae tempora consequuntur quos. Odio libero nihil ea, excepturi facilis numquam, ratione, adipisci iusto mollitia dolorum nobis quas distinctio accusantium! Voluptatem obcaecati molestiae quas temporibus beatae ratione provident similique quo cumque asperiores dolores recusandae aliquam alias totam dignissimos, veritatis est iusto doloribus labore? Beatae cum nihil in hic nam non modi earum, exercitationem vel aliquam ipsum asperiores harum et cumque, ex quaerat. Voluptatem necessitatibus, odit, quo labore ullam asperiores doloribus blanditiis quasi consequuntur in eos! Earum officiis odit quis provident accusamus alias vero modi totam illo reiciendis, laudantium minus vitae. Minima quaerat magnam qui officiis 
+            </main>
+            <aside>
+                AD
+            </aside>
+        </section>
+        <footer>
+            <a href="http://www.naver.com"> 네이버 </a>
+        </footer>
+    </div>
+</body>
+</html>
